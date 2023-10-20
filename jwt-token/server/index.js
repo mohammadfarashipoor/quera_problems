@@ -41,12 +41,12 @@ app.post("/api/token", (req, res) => {
 	}
 
 	if (!REFRESH_TOKENS.includes(token)) {
-		return res.status(403).json({ message: "REFRESH_TOKENS not valid token" });
+		return res.status(403).json({ message: "not valid token" });
 	}
 
 	jwt.verify(token, REFRESH_TOKEN, (err, user) => {
 		if (err) {
-			return res.status(403).json({ message: "err not valid token" });
+			return res.status(403).json({ message: "not valid token" });
 		}
 		res.send(generateToken(user.email));
 	});
@@ -88,7 +88,7 @@ function validateToken(req, res, next) {
 	}
 	jwt.verify(token, ACCESS_TOKEN, (err, email) => {
 		if (err) {
-			return res.status(403).json({ message: "not valid token"});
+			return res.status(403).json({ message: "not valid token" });
 		}
 		req.email = email.email;
 		next();
