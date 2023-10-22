@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-
 import Row from "../Components/Row";
 import UserData from "../Components/UserData";
 import LogoutButton from "../Components/LogoutButton";
@@ -9,21 +8,22 @@ import useJWT from "../Hooks/useJWT";
 const Profile = () => {
     const initialUser = {name: "", lastname: "", phone: "", address: "", email: "", password: ""}
     const [user, setUser] = React.useState(initialUser);
-    const {logout, sendPostRequest} = useJWT()
     const navigate = useNavigate();
 
-    useEffect( async () => {
-            if (!localStorage.getItem('access')) {
-                navigate("/login")
-            } else {
-                const user = {'email': localStorage.getItem('email')}
-                await sendPostRequest('http://127.0.0.1:4000/api/user', user).then((res)=>{
-                    setUser(res?.data?.user)
-                })
-            }
+    // custom HOOK
+    const {logout, sendPostRequest} = useJWT()
+
+    //lifeCycle
+    useEffect(async () => {
+        if (!localStorage.getItem('access')) {
+            navigate("/login")
+        } else {
+            const user = {'email': localStorage.getItem('email')}
+             await sendPostRequest('http://127.0.0.1:4000/api/user', user).then((res) => {
+                setUser(res?.data?.user)
+             })
+        }
     }, [])
-
-
     return (
         <div className="container">
             <Row>

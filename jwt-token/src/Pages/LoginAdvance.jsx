@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from "react";
-import useJWT from '../Hooks/useJWT'
 import Card from "../Components/Card";
 import Input from "../Components/Input";
 import NotRobot from "../Components/NotRobot";
 import LoginButton from "../Components/LoginButtons";
 import ErrorMessage from "../Components/ErrorMessage";
+import {useDispatch, useSelector} from 'react-redux'
+import {loginUser} from "../plugins/redux/action";
 import {useNavigate} from "react-router-dom";
 
-const Login = (props) => {
+const Login = () => {
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
     const [notRobot, setNotRobot] = useState(true);
@@ -16,8 +17,13 @@ const Login = (props) => {
 
     const navigate = useNavigate();
 
-    // custom HOOK
-    const {login} = useJWT();
+
+    // start redux
+    const {userToken,loading, error} = useSelector(
+        (state) => state.content
+    )
+    const dispatch = useDispatch()
+    // end redux
 
     //lifeCycle
     useEffect(() => {
@@ -40,12 +46,16 @@ const Login = (props) => {
         }
     }
     async function submitLogin() {
-        let res = await login(email, pass)
-        if (!res?.data) {
+        //This code if use Redux
+        await loginUser(dispatch, {email, pass}).then(()=>navigate("/"))
+        if (!userToken) {
             setFailed(true)
             setNotRobot(false)
             setPass("")
         }
+    }
+    if (loading) {
+        return 'loading...'
     }
 
     return (
@@ -70,13 +80,13 @@ const Login = (props) => {
                 }}
             />
             {failed && <NotRobot checked={notRobot} onChange={() => {
-                    setNotRobot(!notRobot)
-                }}/>}
+                setNotRobot(!notRobot)
+            }}/>}
             {failed && <ErrorMessage/>}
 
             <LoginButton onClick={async () => {
                 await submitLogin()
-            }} disabled={ !notRobot || isValid}/>
+            }} disabled={!notRobot || isValid}/>
         </Card>
     );
 };
