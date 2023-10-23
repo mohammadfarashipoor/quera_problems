@@ -1,5 +1,8 @@
 import Avatar from "../assets/avatar.png";
-function Comment({ name, message, children }) {
+function Comment({ name, message, children,replayState,setReplayState }) {
+    function handleReplay(){
+        setReplayState({replayTo:name,replayStatus:true})
+    }
   return (
     <div className="box">
       <div className="content">
@@ -9,7 +12,7 @@ function Comment({ name, message, children }) {
         <div className="texts">
           <div className="header">
             <h3 className="name">{name}</h3>
-            <button>replay</button>
+            <button onClick={handleReplay}>replay</button>
           </div>
           <p className="message">{message}</p>
         </div>
@@ -22,6 +25,8 @@ function Comment({ name, message, children }) {
             name={name}
             message={message}
             children={children}
+            replayState={replayState}
+            setReplayState={setReplayState}
           />
         ))}
       </div>
