@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e912c93-6820-4c60-adfa-8614f5f0f537" name="Changes" comment="feat: done problem 134357">
-      <change afterPath="$PROJECT_DIR$/jwt-token/src/Pages/LoginAdvance.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token/src/Pages/ProfileAdvance.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token/src/plugins/axios/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token/src/plugins/redux/action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token/src/plugins/redux/contentSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token/src/plugins/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/jwt-token/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwt-token/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/jwt-token/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwt-token/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/jwt-token/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwt-token/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/jwt-token/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwt-token/src/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/jwt-token/src/Pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwt-token/src/Pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/jwt-token/src/Pages/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwt-token/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jwt-token/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="1e912c93-6820-4c60-adfa-8614f5f0f537" name="Changes" comment="feat(Redux &amp; Axios instance): done problem 134357" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +43,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/DEVELOP/quera_problems/article-comments/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -67,6 +53,10 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\DEVELOP\quera_problems\article-comments\src" />
+      <recent name="E:\DEVELOP\quera_problems\article-comments" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\DEVELOP\quera_problems\jwt-token" />
     </key>
@@ -90,7 +80,10 @@
       <workItem from="1697789183937" duration="32956000" />
       <workItem from="1697876608575" duration="7955000" />
       <workItem from="1697914184322" duration="2100000" />
-      <workItem from="1697955969975" duration="21109000" />
+      <workItem from="1697955969975" duration="22526000" />
+      <workItem from="1697992233241" duration="8469000" />
+      <workItem from="1698007376566" duration="9236000" />
+      <workItem from="1698046007081" duration="8806000" />
     </task>
     <task id="LOCAL-00001" summary="feat(auth): start solve problem 134357">
       <option name="closed" value="true" />
@@ -108,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697811909118</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(Redux &amp; Axios instance): done problem 134357">
+      <option name="closed" value="true" />
+      <created>1697980098262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697980098262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(auth): start solve problem 134357" />
     <MESSAGE value="feat: done problem 134357" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: done problem 134357" />
+    <MESSAGE value="feat(Redux &amp; Axios instance): done problem 134357" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Redux &amp; Axios instance): done problem 134357" />
   </component>
 </project>
