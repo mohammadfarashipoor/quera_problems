@@ -2,26 +2,53 @@ import React from "react";
 import classnames from "classnames";
 import CommentBox from "../CommentBox";
 import "./_styles.scss";
+import EmptyList from "../EmptyList";
 
-const CommentList = ({ comments }) => {
-  return (
-    <div className="root-list">
-      {comments.map((el, idx) => (
-        <div
-          data-testid="comment-wrapper"
-          className={classnames({
-            // Should be true for root comment
-            "root-comment": false,
-          })}
-          key={el.id}
-        >
-          {
-            // Render comment and it's children here use CommentBox
-          }
+export const ComponentNest = ({comment}) => {
+    return (
+        <>
+            {comment.depth !== 0 ? <CommentBox key={comment.id} comment={comment}/> : null}
+
+            {
+                comment.replies && comment.replies.map((el) => (
+                        <ComponentNest key={el.id} comment={el}/>
+                    )
+                )
+            }
+        </>
+    )
+
+}
+const CommentList = ({
+                         comments
+                     }) => {
+
+    if (!comments || comments.length === 0) {
+        return <EmptyList/>
+    }
+    return (
+        <div className="root-list">
+            {comments.map((el, idx) => (
+                    <>
+                        <div
+                            data-testid="comment-wrapper"
+                            className={classnames({
+                                // Should be true for root comment
+                                "root-comment": !el.parentId,
+                            })}
+                            key={el.id}
+                        >
+                            <CommentBox comment={el}/>
+                        </div>
+
+                        {el?.replies?.length !== 0 ? <ComponentNest comment={el}/> : null}
+
+                    </>
+
+                )
+            )}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default CommentList;
