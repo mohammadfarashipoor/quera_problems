@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e912c93-6820-4c60-adfa-8614f5f0f537" name="Changes" comment="feat(Article Comments): start solve problem 134356">
-      <change afterPath="$PROJECT_DIR$/nested-comments/.gitignore" afterDir="false" />
+    <list default="true" id="1e912c93-6820-4c60-adfa-8614f5f0f537" name="Changes" comment="feat: done problem 132254">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jwt-token/README.md" beforeDir="false" />
     </list>
@@ -29,6 +28,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/context-creator/src/lib/createGlobalState.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -41,21 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "frontend",
-    "last_opened_file_path": "E:/DEVELOP/quera_problems/nested-comments",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;frontend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/DEVELOP/FrontEnd/Lite/Try-Lite&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\DEVELOP\quera_problems\nested-comments" />
@@ -109,7 +112,15 @@
       <workItem from="1698152377707" duration="1254000" />
       <workItem from="1698156196050" duration="16852000" />
       <workItem from="1698215018174" duration="14234000" />
-      <workItem from="1698245799042" duration="3423000" />
+      <workItem from="1698245799042" duration="5536000" />
+      <workItem from="1698423490156" duration="96000" />
+      <workItem from="1698423952457" duration="38000" />
+      <workItem from="1698480772186" duration="3753000" />
+      <workItem from="1698519159734" duration="2039000" />
+      <workItem from="1698561623095" duration="14617000" />
+      <workItem from="1698646428075" duration="13655000" />
+      <workItem from="1698698916057" duration="3224000" />
+      <workItem from="1698738885822" duration="12945000" />
     </task>
     <task id="LOCAL-00001" summary="feat(auth): start solve problem 134357">
       <option name="closed" value="true" />
@@ -135,7 +146,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697980098262</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(Nest Comments): start solve problem 132254">
+      <option name="closed" value="true" />
+      <created>1698252603418</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698252603418</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: done problem 132254">
+      <option name="closed" value="true" />
+      <created>1698252853013</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698252853013</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +183,8 @@
     <MESSAGE value="feat(auth): start solve problem 134357" />
     <MESSAGE value="feat: done problem 134357" />
     <MESSAGE value="feat(Redux &amp; Axios instance): done problem 134357" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Redux &amp; Axios instance): done problem 134357" />
+    <MESSAGE value="feat(Nest Comments): start solve problem 132254" />
+    <MESSAGE value="feat: done problem 132254" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: done problem 132254" />
   </component>
 </project>
