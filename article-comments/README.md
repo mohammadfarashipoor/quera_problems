@@ -1,3 +1,9 @@
+# Feature that needs to be implemented
+
+![image](https://github.com/mohammadfarashipoor/quera_problems/blob/frontend/article-comments/article-commen.gif)
+
+
+
 # Things we learned
 
 - Optimistic rendering
